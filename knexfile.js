@@ -6,12 +6,12 @@
 module.exports = {
 
   development: {
-    client: 'mysql',
+    client: process.env.DB_CLIENT,
     connection: {
-      host: 'localhost',
-      user: 'root',
-      password: 'password',
-      database: 'fullstacknextjs'
+      host: process.env.DB_HOST,
+      user: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME
     }
   },
 
